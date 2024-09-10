@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Financeiro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Cabeçalho -->
+    <div class="bg-blue-500 text-white p-4 text-center">
+        <h2 class="text-lg font-semibold">Janeiro</h2>
+        <p class="text-3xl font-bold mt-1">R$3.284,00</p>
+        <p class="text-sm">Saldo em contas</p>
+    </div>
+
+    <!-- Receitas e Despesas -->
+    <div class="flex justify-around mt-8">
+        <div class="text-center">
+            <p class="text-sm text-green-600">Receitas</p>
+            <p class="text-lg font-bold text-green-600">R$3.000,00</p>
+        </div>
+        <div class="text-center">
+            <p class="text-sm text-red-600">Despesas</p>
+            <p class="text-lg font-bold text-red-600">R$1.436,00</p>
+        </div>
+    </div>
+
+    <!-- Despesas por Categoria -->
+    <div class="mt-8 px-4">
+        <h3 class="text-sm font-semibold text-gray-700">Despesas por categoria</h3>
+        <div class="flex items-center justify-center mt-4">
+            <!-- Gráfico de Pizza (Placeholder) -->
+            <div class="w-24 h-24 bg-purple-200 rounded-full relative">
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <p class="text-sm">Gráfico</p>
+                </div>
+            </div>
+
+            <!-- Lista de Categorias -->
+            <div class="ml-6">
+                <p class="text-sm text-gray-700">Educação <span class="float-right">R$650,00</span></p>
+                <p class="text-sm text-gray-700">Casa <span class="float-right">R$276,00</span></p>
+                <p class="text-sm text-gray-700">Alimentação <span class="float-right">R$220,00</span></p>
+                <p class="text-sm text-gray-700">Outros <span class="float-right">R$290,00</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botões -->
+    <div class="flex justify-between mt-8 px-4">
+        <button class="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600">Cancelar</button>
+        <button class="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600">Salvar</button>
+    </div>
+</body>
+</html>
